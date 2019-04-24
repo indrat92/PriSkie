@@ -16,7 +16,7 @@ class DataWeather{
     var lat: String = ""
     let keyID: String = "fd90a5793222ed95e3566bc35a5efc26"
     let urlWeather:String = "https://api.darksky.net/forecast"
-    
+    var iconWeather = ""
     
     
 }
