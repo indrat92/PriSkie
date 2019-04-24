@@ -12,9 +12,12 @@
 		8F729687226F4D69009F43EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F729685226F4D69009F43EB /* Main.storyboard */; };
 		8F729689226F4D6B009F43EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F729688226F4D6B009F43EB /* Assets.xcassets */; };
 		8F72968C226F4D6B009F43EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F72968A226F4D6B009F43EB /* LaunchScreen.storyboard */; };
+		8F729696226F57A7009F43EB /* DataWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F729695226F57A7009F43EB /* DataWeather.swift */; };
+		E0A2118CE8B770EBABE51424 /* Pods_PriSkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D76639B80359CD4DE35BD8 /* Pods_PriSkie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		544C782C9CD339BF009BA3CF /* Pods-PriSkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriSkie.debug.xcconfig"; path = "Target Support Files/Pods-PriSkie/Pods-PriSkie.debug.xcconfig"; sourceTree = "<group>"; };
 		8F72967E226F4D69009F43EB /* PriSkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriSkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F729681226F4D69009F43EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F729683226F4D69009F43EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		8F729688226F4D6B009F43EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F72968B226F4D6B009F43EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F72968D226F4D6B009F43EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F729695226F57A7009F43EB /* DataWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWeather.swift; sourceTree = "<group>"; };
+		BE2B96C93D821C3C85C5C5D6 /* Pods-PriSkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriSkie.release.xcconfig"; path = "Target Support Files/Pods-PriSkie/Pods-PriSkie.release.xcconfig"; sourceTree = "<group>"; };
+		C7D76639B80359CD4DE35BD8 /* Pods_PriSkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriSkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A2118CE8B770EBABE51424 /* Pods_PriSkie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		356B168303ACBBDDB8A1CD46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D76639B80359CD4DE35BD8 /* Pods_PriSkie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E78DE960AD801EF90336021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				544C782C9CD339BF009BA3CF /* Pods-PriSkie.debug.xcconfig */,
+				BE2B96C93D821C3C85C5C5D6 /* Pods-PriSkie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8F729675226F4D69009F43EB = {
 			isa = PBXGroup;
 			children = (
+				8F729694226F5782009F43EB /* Data Storage */,
+				8F729693226F4E77009F43EB /* Model */,
 				8F729680226F4D69009F43EB /* PriSkie */,
 				8F72967F226F4D69009F43EB /* Products */,
+				6E78DE960AD801EF90336021 /* Pods */,
+				356B168303ACBBDDB8A1CD46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,28 @@
 			isa = PBXGroup;
 			children = (
 				8F729681226F4D69009F43EB /* AppDelegate.swift */,
-				8F729683226F4D69009F43EB /* ViewController.swift */,
 				8F729685226F4D69009F43EB /* Main.storyboard */,
 				8F729688226F4D6B009F43EB /* Assets.xcassets */,
 				8F72968A226F4D6B009F43EB /* LaunchScreen.storyboard */,
 				8F72968D226F4D6B009F43EB /* Info.plist */,
 			);
 			path = PriSkie;
+			sourceTree = "<group>";
+		};
+		8F729693226F4E77009F43EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F729683226F4D69009F43EB /* ViewController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F729694226F5782009F43EB /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				8F729695226F57A7009F43EB /* DataWeather.swift */,
+			);
+			path = "Data Storage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F729690226F4D6B009F43EB /* Build configuration list for PBXNativeTarget "PriSkie" */;
 			buildPhases = (
+				8020FB734F0C3F4ABECF5129 /* [CP] Check Pods Manifest.lock */,
 				8F72967A226F4D69009F43EB /* Sources */,
 				8F72967B226F4D69009F43EB /* Frameworks */,
 				8F72967C226F4D69009F43EB /* Resources */,
+				4826B4C27F02444924F81186 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +175,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4826B4C27F02444924F81186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PriSkie/Pods-PriSkie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PriSkie/Pods-PriSkie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8020FB734F0C3F4ABECF5129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriSkie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F72967A226F4D69009F43EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +231,7 @@
 			files = (
 				8F729684226F4D69009F43EB /* ViewController.swift in Sources */,
 				8F729682226F4D69009F43EB /* AppDelegate.swift in Sources */,
+				8F729696226F57A7009F43EB /* DataWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +375,7 @@
 		};
 		8F729691226F4D6B009F43EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544C782C9CD339BF009BA3CF /* Pods-PriSkie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +393,7 @@
 		};
 		8F729692226F4D6B009F43EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2B96C93D821C3C85C5C5D6 /* Pods-PriSkie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
